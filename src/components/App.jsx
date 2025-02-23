@@ -4,7 +4,7 @@ import userData from "../userData.json"
 import friends from "../friends.json";
 import FriendList from "./FriendList/FriendList";
 import FriendListItem from "./FriendList/FriendListItem";
-import styles from "./FriendListItem.module.css"
+
 
 
 export default function App() {
