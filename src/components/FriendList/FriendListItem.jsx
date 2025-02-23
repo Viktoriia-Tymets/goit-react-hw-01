@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import avatar from "../../friends.json";
+import friend from "../../friends.json";
 
 
 export default function FriendListItem({
