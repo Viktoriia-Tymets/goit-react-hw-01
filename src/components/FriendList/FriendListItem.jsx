@@ -2,7 +2,6 @@ import clsx from "clsx";
 import avatar from "../../friends.json";
 
 
-
 export default function FriendListItem({
     friend: {avatar, name, isOnline}
 }) {
