@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import friend from "../../friends.json";
+import friends from "../../friends.json";
 
 
 export default function FriendListItem({
@@ -10,9 +10,9 @@ const statusClsx = clsx(css.text, isOnline ? css.online : css.offline);
 
     return (
     <div>
-  <img src={avatar} alt="Avatar" width="48" />
-  <p>{name}</p>
-  <p>{isOnline}</p>
+  <img src={friends.avatar} alt="Avatar" width="48" />
+  <p>{friends.name}</p>
+  <p>{friends.isOnline}</p>
 </div>
 )
 }
