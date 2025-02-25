@@ -2,8 +2,8 @@ import React from "react";
 import UserProfile from "./Profile/Profile";
 import userData from "../userData.json"
 import friends from "../friends.json";
-import FriendList from "./FriendList/FriendList";
-import TransactionHistory from "./Tranzaction/TransactionHistory";
+import FriendList from "./FriendListItem/FriendList";
+import TransactionHistory from "./TranzactionHistory/TransactionHistory";
 import transactions from "../transactions.json";
 
 
