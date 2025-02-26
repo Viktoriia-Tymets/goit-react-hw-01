@@ -14,7 +14,7 @@ export default function TransactionHistory({
   </thead>
 
   <tbody>
-    <tr key={transaction.id}>
+    <tr key={id}>
  <td>{type}</td>
  <td>{amount}</td>
 <td>{currency}</td>
