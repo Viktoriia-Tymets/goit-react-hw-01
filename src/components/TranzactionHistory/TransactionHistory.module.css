@@ -1,0 +1,12 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableLine {
+  border: 1px solid #0a0909;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}

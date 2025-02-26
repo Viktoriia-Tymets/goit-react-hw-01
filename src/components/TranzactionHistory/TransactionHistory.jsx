@@ -1,26 +1,28 @@
 import transaction from "../../transactions.json";
+import css from "./TransactionHistory.module.css";
 
-export default function TransactionHistory({
-    items: {id, type, amount, currency}
-}) {
-    return (
-        <table>
+export default function TransactionHistory({items}) {
+  return (
+      
+  <table className={css.table}>
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <th className={css.tableLine}>Type</th>
+      <th className={css.tableLine}>Amount</th>
+      <th className={css.tableLine}>Currency</th>
     </tr>
   </thead>
-
-  <tbody>
-    <tr key={id}>
- <td>{type}</td>
- <td>{amount}</td>
-<td>{currency}</td>
-    </tr>
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id}>
+            <td className={      }>{type}</td>
+            <td className={      }>{amount}</td>
+            <td className={      }>{currency}</td>
+          </tr>
+        ))}
   </tbody>
-</table>
+      </table>
+      
     )
 }
 
