@@ -1,18 +1,16 @@
 import clsx from "clsx";
 import friends from "../../friends.json";
+import css from "./FriendListItem.module.css";
 
-
-export default function FriendListItem({
-    friend: {avatar, name, isOnline}
-}) {
+export default function FriendListItem({avatar, name, isOnline}) {
 
 const statusClsx = clsx(css.text, isOnline ? css.online : css.offline);
 
     return (
     <div>
-  <img src={friends.avatar} alt="Avatar" width="48" />
-  <p>{friends.name}</p>
-  <p>{friends.isOnline}</p>
+  <img src={avatar} alt="Avatar" width="48" />
+  <p>{name}</p>
+  <p>{isOnline}</p>
 </div>
 )
 }

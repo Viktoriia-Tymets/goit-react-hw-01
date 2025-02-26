@@ -7,7 +7,6 @@ import TransactionHistory from "./TranzactionHistory/TransactionHistory";
 import transactions from "../transactions.json";
 
 
-
 export default function App() {
   return (
     <>

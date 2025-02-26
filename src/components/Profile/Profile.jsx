@@ -1,5 +1,8 @@
+
+
 export default function UserProfile({ name, tag, location, image, stats })
 {
+
     return (
     <div>
 <div>
@@ -14,15 +17,15 @@ alt="User avatar"
 
 <ul>
 <li>
-<span>Followers:</span>
+<span>Followers</span>
  <span>{stats?.followers}</span>
 </li>
 <li>
-<span>Views:</span>
+<span>Views</span>
 <span>{stats?.views}</span>
 </li>
 <li>
-<span>Likes:</span>
+<span>Likes</span>
 <span>{stats?.likes}</span>
 </li>
 </ul>
