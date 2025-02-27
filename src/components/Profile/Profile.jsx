@@ -1,8 +1,7 @@
-import css from "./Profile.module.css"
+import css from "./Profile.module.css";
 
-export default function UserProfile({ name, tag, location, image, stats })
+export default function UserProfile({ name, tag, location, image, stats = {} })
 {
-
     return ( 
 
     <div className={css.profile}>
@@ -20,17 +19,17 @@ className={css.avatar}
 <ul className={css.stats}>
 <li>
 <span className={css.label}>Followers</span>
- <span className={css.quantity}>{stats?.followers}</span>
+ <span className={css.quantity}>{stats.followers ?? 0}</span>
 </li>
                 
 <li>
 <span className={css.label}>Views</span>
-<span className={css.quantity}>{stats?.views}</span>
+<span className={css.quantity}>{stats.views ?? 0}</span>
  </li>
                 
 <li>
 <span className={css.label}>Likes</span>
-<span className={css.quantity}>{stats?.likes}</span>
+<span className={css.quantity}>{stats.likes ?? 0}</span>
 </li>
 </ul>
 </div>

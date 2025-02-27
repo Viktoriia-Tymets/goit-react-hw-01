@@ -7,17 +7,17 @@ export default function TransactionHistory({items}) {
   <table className={css.table}>
   <thead>
     <tr>
-      <th className={css.tableLine}>Type</th>
-      <th className={css.tableLine}>Amount</th>
-      <th className={css.tableLine}>Currency</th>
+      <th className={css.tableMainLine}>Type</th>
+      <th className={css.tableMainLine}>Amount</th>
+      <th className={css.tableMainLine}>Currency</th>
     </tr>
   </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <td className={      }>{type}</td>
-            <td className={      }>{amount}</td>
-            <td className={      }>{currency}</td>
+          <tr className={css.line} key={id}>
+            <td className={css.tableLine}>{type}</td>
+            <td className={css.tableLine}>{amount}</td>
+            <td className={css.tableLine}>{currency}</td>
           </tr>
         ))}
   </tbody>

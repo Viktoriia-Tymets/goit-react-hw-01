@@ -4,9 +4,25 @@
   margin-top: 20px;
 }
 
-.tableLine {
-  border: 1px solid #0a0909;
+.table th {
   background-color: black;
+  color: rgb(255, 249, 249);
+  font-weight: bold;
   padding: 10px;
   text-align: center;
+}
+
+.table td {
+  border: 2px solid #000000;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.table tr:nth-child(even) {
+  background-color: #929090;
+}
+
+.table tr:nth-child(odd) {
+  background-color: white;
 }

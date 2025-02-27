@@ -2,7 +2,7 @@
   width: 380px;
   text-align: center;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: rgb(228, 238, 245);
 }
 
 .description {
@@ -27,8 +27,9 @@
 .stats {
   display: flex;
   justify-content: space-around;
-  background-color: #f3f3f3;
+  background-color: #acabab;
   padding: 10px;
+  color: black;
 }
 
 .stats li {
@@ -38,8 +39,8 @@
 }
 
 .label {
-  font-size: 14px;
-  color: gray;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
 }
 
 .quantity {
